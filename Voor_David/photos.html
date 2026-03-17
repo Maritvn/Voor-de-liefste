@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE NOTES.EXE 💌</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #C4B5E0;
+            background-image: 
+                linear-gradient(#9B7ED0 1px, transparent 1px),
+                linear-gradient(90deg, #9B7ED0 1px, transparent 1px);
+            background-size: 30px 30px;
+            font-family: 'Press Start 2P', cursive;
+            color: #222;
+            min-height: 100vh;
+            image-rendering: pixelated;
+        }
+
+        .desktop {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .window {
+            background: var(--creme);
+            border: 8px solid #222;
+            box-shadow: 12px 12px 0 #222;
+            margin: 40px auto;
+            max-width: 900px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .window-header {
+            background: linear-gradient(to right, var(--roze3), var(--paars));
+            color: white;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .title-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .pixel-btn {
+            width: 22px;
+            height: 22px;
+            background: white;
+            border: 4px solid #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            line-height: 1;
+            cursor: pointer;
+            box-shadow: 3px 3px 0 #222;
+        }
+
+        .pixel-btn:hover {
+            background: #ff9;
+        }
+
+        .content {
+            padding: 25px;
+            border-top: 6px solid #222;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 30px 0;
+            text-shadow: 4px 4px 0 #222;
+            color: var(--paars);
+        }
+
+        .notes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 35px;
+            padding: 20px 0;
+        }
+
+        .note-card {
+            background: var(--roze1);
+            border: 6px solid #222;
+            box-shadow: 8px 8px 0 #222;
+            padding: 20px;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        .note-card h3 {
+            font-size: 1.1rem;
+            margin: 0 0 12px 0;
+            color: var(--roze3);
+            text-shadow: 2px 2px 0 #222;
+        }
+
+        .note-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+        }
+
+        .pixel-button {
+            display: inline-block;
+            background: var(--roze2);
+            color: white;
+            padding: 15px 30px;
+            margin: 40px auto 20px;
+            border: 6px solid #222;
+            box-shadow: 8px 8px 0 #222;
+            text-decoration: none;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: all 0.2s;
+        }
+
+        .pixel-button:hover {
+            transform: translate(4px, 4px);
+            box-shadow: 4px 4px 0 #222;
+            background: var(--roze3);
+        }
+
+        :root {
+            --roze1: #FCD8D6;
+            --roze2: #ECB2C9;
+            --roze3: #E28DB2;
+            --paars: #D2BAE7;
+            --creme: #F6EED7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="desktop">
+        <div class="window">
+            <div class="window-header">
+                <div>💌 LOVE NOTES.FOLDER</div>
+                <div class="title-buttons">
+                    <div class="pixel-btn">_</div>
+                    <div class="pixel-btn">□</div>
+                    <div class="pixel-btn">✕</div>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Mijn kleine liefdesberichtjes voor jou</h1>
+
+                <div class="notes-grid">
+                    <!-- Hier komen jouw eigen berichtjes ↓ vervang de tekstjes -->
+
+                    <div class="note-card">
+                        <h3>Ochtend</h3>
+                        <p>Vanochtend werd ik wakker en het eerste wat ik dacht was: fuck, ik heb hem.
+                            Geen storm in m’n hoofd, alleen jij die daar ligt te slapen met dat domme lachje.
+                            Dat is mijn favoriete medicijn. Blij dat jij er bent.</p>
+                    </div>
+
+                    <div class="note-card">
+                        <h3>Manie</h3>
+                        <p>Manie of niet, jij maakt dat ik harder lach dan ik ooit alleen kon.
+                            Alsof iemand de volumeknop van m’n geluk heeft opengedraaid.
+                            Jij bent de beste side-effect die ik ooit heb gehad.
+                            Ik hou van je, idioot. ❤️</p>
+                    </div>
+
+                    <div class="note-card">
+                        <h3>Crash</h3>
+                        <p>Soms crash ik nog steeds keihard.
+                            Maar dan stuur jij een domme meme of zeg je gewoon “kom eens hier” en ineens voelt alles lichter.
+                            Jij bent het enige wat sterker is dan de dip.
+                            Dankjewel dat je m’n anker bent én m’n feestje.</p>
+                    </div>
+
+                    <div class="note-card">
+                        <h3>Chaos</h3>
+                        <p>Weet je wat het gekste is?
+                            Zelfs op de kutste dagen voel ik nog vlinders als ik aan je denk.
+                            Alsof m’n hoofd zegt: hé sufferd, je hebt hem toch?
+                            En dan glimlach ik als een debiel in m’n eentje.
+                            Jij wint altijd van de chaos.</p>
+                    </div>
+
+                    <!-- voeg zoveel toe als je wilt, kopieer gewoon een <div class="note-card"> ... </div> blokje -->
+
+                </div>
+
+                <a href="index.html" class="pixel-button">← TERUG NAAR LOVE.EXE</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
